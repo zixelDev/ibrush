@@ -1,0 +1,29 @@
+.advert {
+    padding: 34px 0 36px 0;
+    background-color: #ededed;
+    min-height: 230px;
+
+    &_wrap {
+        &_picture {
+            img {
+                display: block;
+                margin: 19px auto 0 auto;
+            }
+        }
+
+        h2 {
+            // width: 142px;
+            color: #000000;
+            font-family: "Segoe UI";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            margin: 0 0 0 64px;
+
+            a {
+                color: #0062ff;
+            }
+
+        }
+    }
+}

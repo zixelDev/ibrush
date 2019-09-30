@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="promo">
+        <div class="container">
+            <div class="promo_title">
+                <div class="promo_title_line"></div>
+                <h2>Путь JavaScript</h2>
+                <div class="promo_title_line"></div>
+            </div>
+            <div class="promo_main">
+                <div class="promo_main_screen">
+                    <div class="promo_main_screen_wb">
+                        <div class="promo_main_screen_wb_triangle"></div>
+                        <h2>12<br>апреля</h2>
+                    </div>
+                    <img src="image/books-1.jpg" alt="books-1" class="promo_main_screen_image">
+                    <div class="promo_main_screen_slider">
+                            <div class="promo_main_screen_slider_item"></div>
+                            <div class="promo_main_screen_slider_item"></div>
+                            <div class="promo_main_screen_slider_item"></div>
+                    </div>
+                    <div class="promo_main_screen_crawl">
+                        <div class="promo_main_screen_crawl_trigger active"></div>
+                        <div class="promo_main_screen_crawl_trigger"></div>
+                        <div class="promo_main_screen_crawl_trigger"></div>
+                    </div>
+                </div>
+                <h2 class="promo_main_subtext">Можно выделить три основных направления для прогресса JavaScript Middle
+                </h2>
+            </div>
+            <div class="promo_breakline"></div>
+            <h2 class="title">Серверный JavaScript</h2>
+            <div class="promo_content">
+                <img src="image/quotation-mark.svg" alt="quotation-mark">
+                <p>Разработчики и клиенты часто неправильно понимают, что такое система.<br> Они видят графический
+                    интерфейс
+                    и
+                    думают, что он и есть система. Они определяют систему в терминах графического интерфейса и считают,
+                    что<br>
+                    должны сразу начать работу с графическим интерфейсом. Они не понимают важнейшего принципа:
+                    ввод/вывод не
+                    важен.<br><br><br>
+                    <span>— Р. Мартин</span>
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <section class="advert">
+        <div class="container">
+            <div class="advert_wrap">
+                <h2>Реклама на: <a href="http://blabla.com">blabla.com</a></h2>
+                <div class="advert_wrap_picture">
+                        <img src="image/books-2.jpg" alt="books-2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="conclusion">
+        <div class="container">
+            <h2 class="title">Заключение</h2>
+            <p>Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует лирический субъект.
+                Абстрактное высказывание пространственно просветляет деструктивный<br> символ. Ямб, несмотря на то, что
+                все
+                эти характерологические черты отсылают не к единому<br> образу нарратора, интегрирует мифопоэтический
+                хронотоп. Действительно, ударение приводит<br> палимпсест. Контрапункт приводит ритм.
+            </p>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews_title">Оцените статью</div>
+            <!--первый вариант реализации оценки ++ -->
+            <!-- <div class="reviews_asessment" >
+                <div class="reviews_asessment_star" tabindex="1">
+                    <div class="reviews_asessment_star"  tabindex="1">
+                        <div class="reviews_asessment_star"  tabindex="1">
+                            <div class="reviews_asessment_star"  tabindex="1">
+                                <div class="reviews_asessment_star" tabindex="1"  ></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!--первый вариант реализации оценки -->
+            <!--второй вариант ++ -->
+            <div class="rating_block">
+                <input name="rating" value="5" id="rating_5" type="radio" />
+                <label for="rating_5" class="label_rating"></label>
+
+                <input name="rating" value="4" id="rating_4" type="radio" />
+                <label for="rating_4" class="label_rating"></label>
+
+                <input name="rating" value="3" id="rating_3" type="radio" />
+                <label for="rating_3" class="label_rating"></label>
+
+                <input name="rating" value="2" id="rating_2" type="radio" />
+                <label for="rating_2" class="label_rating"></label>
+
+                <input name="rating" value="1" id="rating_1" type="radio" />
+                <label for="rating_1" class="label_rating"></label>
+            </div>
+            <!--второй вариант -- -->
+            <h2 class="reviews_subtitle">Добавить комментарий к книге</h2>
+            <form action="">
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Email">
+                <div class="filter">
+                    <h2 class="filter_default">Выберите книгу</h2>
+                    <ul class="filter_wrap">
+                        <li class="book">
+                            <div class="lighthight"></div>
+                            <h2>JavaScript ниндзя</h2>
+                        <li class="book">
+                            <div class="lighthight"></div>
+                            <h2>Pragmatic Guide to JavaScript</h2>
+                        </li>
+                        <li class="book">
+                            <div class="lighthight"></div>
+                            <h2>Pro JavaScript Techniques</h2>
+                        </li>
+                        <li class="book">
+                            <div class="lighthight"></div>
+                            <h2>Выразительный JavaScript</h2>
+                        </li>
+                    </ul>
+                    <img src="image/arrow-point-to-right.svg" id="listBooks">
+                </div>
+                <textarea name="" placeholder="Ваш отзыв"></textarea>
+                <button type="submit">ОТПРАВИТЬ</button>
+            </form>
+        </div>
+        </div>
+    </section>
+    <section class="posts">
+        <div class="container">
+            <h2 class="posts_title">Похожие посты</h2>
+            <div class="posts_list">
+                <div class="posts_list_item">
+                    <div class="posts_list_item_box">
+                        <img src="image/react-icon-15.svg" alt="react">
+                    </div>
+                    <h2>События жизненного цикла ReactJS</h2>
+                </div>
+                <div class="posts_list_item">
+                    <img src="image/grids.svg" alt="grids">
+                    <h2>CSS Grids. Полное руководство</h2>
+                </div>
+                <div class="posts_list_item">
+                    <img src="image/JS.svg" alt="JS">
+                    <h2>Асинхронность в JavaScript</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="js/slick.min.js"></script>
+    <script src='js/script.js'></script>
+</body>
+
+</html>

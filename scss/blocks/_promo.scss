@@ -1,0 +1,125 @@
+.promo {
+    min-height: 785px;
+    padding: 79px 0 56px 0;
+
+
+    &_title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_line {
+            width: 140px;
+            height: 1px;
+            background-color: #454a52;
+            opacity: 0.2;
+        }
+
+        h2 {
+            display: block;
+            color: #0062ff;
+            font-weight: 700;
+            line-height: 48px;
+            text-align: center;
+            font-size: 48px;
+            margin: 0 31px 0 31px;
+        }
+    }
+
+    &_main {
+        display: flex;
+        flex-direction: column;
+        margin: 68px 0 0 0;
+        &_screen {
+            position: relative;
+
+            &_wb {
+                position: absolute;
+                width: 120px;
+                height: 100px;
+                background-color: white;
+                border: 1px solid #ffffff;
+                opacity: 0.7;
+                top: 13px;
+                left: 20px;
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: center;
+
+                &_triangle {
+                    border: 5px solid transparent;
+                    border-left: 5px solid black;
+                    margin-bottom: 20px;
+                }
+
+                h2 {
+                    font-family: Merriweather;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    /* Text style for "12" */
+                    font-size: 24px;
+                    text-align: center;
+                }
+            }
+
+            &_image {
+                display: block;
+                margin: 0;
+            }
+            &_slider {
+                display: none;
+            }
+            &_crawl {
+                display: none;
+            }
+        }
+
+        &_subtext {
+            color: #202326;
+            font-family: "Arial - Italic MT";
+            font-style: italic;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            margin: 19px 0 0 0;
+        }
+    }
+
+    &_breakline {
+        width: 738px;
+        height: 1px;
+        background-color: #454a52;
+        opacity: 0.2;
+        margin: 57px 0 57px 0;
+    }
+
+    &_content {
+        margin-top: 27px;
+        display: flex;
+        align-items: flex-start;
+
+        p {
+            margin: 8px 0 0 0;
+            font-style: italic;
+            color: #000000;
+            font-family: "Segoe UI";
+            font-size: 18px;
+            font-style: italic;
+            line-height: 24px;
+
+            span {
+                opacity: 0.8;
+                color: grey;
+            }
+        }
+
+        img {
+            display: block;
+            width: 34px;
+            height: 34px;
+            margin-right: 30px;
+        }
+    }
+}

@@ -1,0 +1,301 @@
+@media (max-width:1199px) {}
+
+@media (max-width:991px) {}
+
+@media (max-width:767px) {
+
+    .title {
+        margin-top: 40px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    .container {
+        max-width: 280px;
+        padding: 0 20px 0 20px;
+    }
+
+    .promo {
+        padding: 41px 0 76px 0;
+
+        &_title {
+            h2 {
+                font-size: 24px;
+                margin: 0 20px 0 20px;
+            }
+
+            &_line {
+                width: 21px;
+            }
+        }
+
+        &_main {
+            margin-top: 44px;
+            flex-direction: column-reverse;
+
+            &_subtext {
+                margin-top: 0;
+                width: 253px;
+                height: 47px;
+                color: #202326;
+                font-family: "Arial - Italic MT";
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+            }
+
+            &_screen {
+                margin-top: 29px;
+                overflow: hidden;
+
+                &_wb {
+                    z-index: 1;
+                }
+
+                &_image {
+                    // position: relative;
+                    display: none;
+                    overflow: hidden;
+                }
+
+                &_slider {
+                    display: block;
+
+                    // height: 300px;
+                    // width: 100%;
+                    &_item {
+                        background-image: url("../image/books-1.jpg");
+                        width: 100%;
+                        height: 300px;
+                        background-position: 0%;
+                        background-repeat: no-repeat;
+
+                        &:nth-child(2) {
+                            background-position: 60%;
+                        }
+
+                        &:nth-child(3) {
+                            background-position: 120%;
+
+                        }
+                    }
+
+                }
+
+                &_crawl {
+                    display: flex;
+                    margin-top: 13px;
+                    width: 280px;
+                    height: 4px;
+                    border-radius: 2px;
+                    background-color: #e6e6e6;
+                    cursor: pointer;
+
+                    &_trigger {
+                        width: 93px;
+                        height: 4px;
+                        border-radius: 2px;
+                        // transition: 0.5s;
+                        background-color: #e6e6e6;
+                        cursor: pointer;
+                    }
+
+                    .active {
+                        background-color: #0062ff;
+                    }
+                }
+            }
+        }
+
+        &_breakline {
+            display: none;
+        }
+
+        &_content {
+            img {
+                margin-right: 20px;
+            }
+
+            p {
+                width: 216px;
+                height: 275px;
+                color: #000000;
+                font-family: "Segoe UI";
+                font-size: 14px;
+                font-style: italic;
+                line-height: 20px;
+
+                span {
+                    display: block;
+                    margin-top: -15px;
+                }
+            }
+        }
+    }
+
+    .advert {
+        padding: 20px;
+
+        &_wrap {
+            h2 {
+                margin: 0;
+                display: inline;
+                text-align: left;
+            }
+
+            &_picture {
+                margin-top: 20px;
+                background: url("/image/books-2.jpg") center (left 75%/cover) no-repeat;
+                width: 100%;
+                height: 200px;
+
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .conclusion {
+        padding: 0 0 37px 0;
+
+        p {
+            width: 279px;
+            height: 194px;
+            color: #202326;
+            font-family: "Arial MT";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    }
+
+    .reviews {
+        &_title {
+            width: 100%;
+            height: 13px;
+            color: #202326;
+            font-family: Consolas;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18px;
+        }
+
+        &_subtitle {
+            margin-top: 25px;
+            width: 100%;
+            height: 15px;
+            color: #202326;
+            font-family: Consolas;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18px;
+        }
+
+        form {
+            flex-direction: column;
+
+            input {
+                width: calc(100% - 22px);
+                margin-bottom: 14px;
+            }
+
+            .filter {
+                width: calc(100% - 2px);
+                margin-bottom: 14px;
+            }
+
+            textarea {
+                margin-top: 0;
+                width: calc(100% - 22px);
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+
+    .posts {
+        padding: 40px 0 62px 0;
+
+        &_title {
+            width: 100%;
+            height: 14px;
+            color: #000000;
+            font-family: Consolas;
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 0;
+        }
+
+        &_list {
+            .my-Dots {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding-left: 0;
+
+                li {
+                    list-style-type: none;
+
+                    button {
+                        visibility: hidden;
+                    }
+
+                    &:before {
+                        // @include dots;
+                        content: url('../image/dots.svg');
+                    }
+                }
+
+                .slick-active {
+                    button {
+                        margin-top: 3px;
+                        visibility: hidden;
+                    }
+
+                    &:before {
+                        content: url('../image/round_active.svg');
+                    }
+                }
+            }
+
+            &_item {
+                margin-right: 0;
+
+                &_box {
+                    width: 280px;
+                    height: 280px;
+
+                }
+
+                &:nth-child(3) {
+                    img {
+                        width: 280px;
+                        height: 280px;
+                    }
+                }
+
+                &:nth-child(4) {
+                    img {
+                        width: 280px;
+                        height: 280px;
+                    }
+                }
+
+                h2 {
+                    width: 237px;
+                    height: 38px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:565px) {}

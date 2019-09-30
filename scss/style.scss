@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+* {
+    font-family: 'Consolas;', monospace;
+}
+
+.container {
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+//блоки
+@import 'blocks/promo';
+@import 'blocks/titles';
+@import 'blocks/advert';
+@import 'blocks/conclusion';
+@import 'blocks/reviews';
+@import 'blocks/posts';
+
+
+//библиотеки
+@import '../lib/animate';
+@import '../lib/slick';
+
+//адаптив
+@import 'media';
